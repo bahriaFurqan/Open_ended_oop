@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="598.0" prefWidth="754.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="task.lab_assighment13.AddItemController">
+   <children>
+      <Text layoutX="235.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="product lists">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="47.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="312.0" layoutY="137.0" prefHeight="358.0" prefWidth="441.0">
+        <columns>
+          <TableColumn fx:id="productIdColumn" prefWidth="95.20001220703125" text="Product ID" />
+          <TableColumn fx:id="productNameColumn" prefWidth="103.20001220703125" text="Product Name" />
+            <TableColumn fx:id="productPriceColumn" prefWidth="105.5999755859375" text="Price" />
+            <TableColumn fx:id="imagelinkcolumn" prefWidth="130.39996337890625" text="Link" />
+        </columns>
+      </TableView>
+      <TextField fx:id="itemIdTextField" alignment="CENTER" layoutX="148.0" layoutY="135.0" promptText="enter ID" />
+      <Text layoutX="34.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="itemNameTextField" alignment="CENTER" layoutX="148.0" layoutY="184.0" promptText="enter Name" />
+      <Text layoutX="34.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Price">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="itemPriceTextField" alignment="CENTER" layoutX="148.0" layoutY="234.0" promptText="enter Price" />
+      <Button fx:id="addItemButton" layoutX="64.0" layoutY="325.0" mnemonicParsing="false" onAction="#Add_handler" text="Add " />
+      <Button fx:id="removeItemButton" layoutX="157.0" layoutY="325.0" mnemonicParsing="false" onAction="#Remove_handler" text="Edit" />
+      <Button fx:id="editItemButton" layoutX="107.0" layoutY="381.0" mnemonicParsing="false" onAction="#Edit_handler" text="Remove" />
+      <TextField fx:id="itemimagetextfield" alignment="CENTER" layoutX="148.0" layoutY="273.0" promptText="enter image link" />
+      <Text layoutX="34.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Image">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="Back_id" layoutX="209.0" layoutY="381.0" mnemonicParsing="false" onAction="#back_handler" text="Back" />
+   </children>
+</AnchorPane>
